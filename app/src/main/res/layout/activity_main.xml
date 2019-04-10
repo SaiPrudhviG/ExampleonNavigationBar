@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationbar"
+        android:background="@color/colorPrimary"
+        app:headerLayout="@drawable/nav_header_img"
+        app:menu="@menu/bottom_nav_bar">
+    </android.support.design.widget.NavigationView>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimaryDark">
+
+        <EditText
+            android:id="@+id/mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:hint="Enter Your Mobile Number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:paddingBottom="15dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="15sp" />
+    </android.support.design.widget.TextInputLayout>
+</android.support.v4.widget.DrawerLayout>
+
